@@ -81,19 +81,19 @@ int main()
     randomMapGenerate(); //подключаем функцию рандомной генерации
 
     Font font;
-    font.loadFromFile("C:/Users/Макар/Downloads/1942.ttf");  //зазгружаем шрифт для текста
+    font.loadFromFile("C:/Users/*****/Downloads/1942.ttf");  //зазгружаем шрифт для текста
     Text text1("", font, 50);
     //Text text2("", font, 50);
 
     Image map_image; //объект изображения для карты
-    map_image.loadFromFile("C:/Users/Макар/Downloads/_MAP_.png"); //загружаем файл для карты
+    map_image.loadFromFile("C:/Users/*****/Downloads/_MAP_.png"); //загружаем файл для карты
     Texture map; //текстура карты
     map.loadFromImage(map_image); //заряжаем текстуру картинкой
     Sprite s_map; //создаём спрайт для карты
     s_map.setTexture(map); //заливаем текстуру спрайтом
     
     Texture background; //фоновое изображение
-    background.loadFromFile("C:/Users/Макар/Downloads/skyofmotherland (2).png");
+    background.loadFromFile("C:/Users/*****/Downloads/skyofmotherland (2).png");
     Sprite back;
     back.setTexture(background);
    
@@ -101,7 +101,7 @@ int main()
     Player p("Yakset.png", 200, 1000, 169, 45); // самолет (сам спрайт)
 
     Music fly;
-    fly.openFromFile("C:/Users/Макар/Downloads/MainAudio.ogg");  //звук летящего самолета
+    fly.openFromFile("C:/Users/*****/Downloads/MainAudio.ogg");  //звук летящего самолета
     fly.play(); 
 
     float Frame = 0;
